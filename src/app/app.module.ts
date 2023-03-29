@@ -7,10 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MovieComponent } from './movie/movie.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FeatureModule } from './feature/feature.module';
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent, MovieComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [AppComponent, LoginComponent, HomeComponent, MovieComponent, HeaderComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, FeatureModule],
   providers: [],
   bootstrap: [AppComponent],
 })
